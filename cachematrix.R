@@ -49,3 +49,18 @@ cacheSolve <- function(x, ...) {
   x$setinverse
   m
 }
+
+# To test the functions are working: 
+
+#1. Source the file: 
+#   source('ProgrammingAssignment2/cachematrix.R')
+#2. Assign a matrix:
+#   a<-matrix(1:4,nrow=2,ncol=2)
+#3. make cache matrix:
+#   a2<-makeCacheMatrix(a)
+#4. cachSolve matrix:
+#   cacheSolve(a2)
+#   Should print out inverse matrix:
+#         [,1] [,2]
+#   [1,]   -2  1.5
+#   [2,]    1 -0.5
